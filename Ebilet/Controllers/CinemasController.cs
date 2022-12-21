@@ -13,7 +13,7 @@ namespace Ebilet.Controllers
         public IActionResult Index()
         {
             var allCinemas = _context.Cinemas.ToList();
-            return View();
+            return View(allCinemas);
         }
     }
 }
